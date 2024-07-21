@@ -1,0 +1,18 @@
+@use '../../../sass/general/variables' as v;
+
+.grandContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0 10px 0;
+
+    .grandText {
+      text-transform: uppercase;
+    }
+
+    .grandPrice {
+      color: v.$primario;
+      font-weight: 700;
+      font-size: 18px;
+    }
+  }

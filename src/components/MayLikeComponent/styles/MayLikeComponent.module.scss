@@ -1,0 +1,35 @@
+@use '../../../sass/general/variables' as v;
+@use '../../../sass/general/mixins' as m;
+
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .cardImage {
+        width: 300px;
+    }
+
+    .cardHeading {
+        text-align: center;
+        margin: 40px 0 50px 0;
+        font-size: 2.2rem;
+        letter-spacing: 1.5px;
+    }
+
+    .cardButton a{
+        @include m.boton(v.$primario, v.$blanco);
+        color: white;
+    }
+
+    // ------ TABLET ------ //
+  /*   @media (max-width: 1200px) { 
+        .cardContainer {
+            gap: 100px;
+            
+             .cardButton {
+                margin-bottom: 300px;
+             }
+        }
+    }  */
+}

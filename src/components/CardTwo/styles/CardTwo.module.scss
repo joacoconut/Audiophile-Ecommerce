@@ -1,0 +1,25 @@
+@use '../../../sass/general/variables' as v;
+@use '../../../sass/general/mixins' as m;
+
+.cardContent {
+    height: 300px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    background-color: v.$gris_secundario;
+    border-radius: 5px;
+    padding-left: 50px;
+
+    .cardButton a{
+        @include m.boton(#ffffff00, v.$negro);
+        border: 1px solid v.$negro;
+    }
+
+    .cardButton a:hover {
+        background-color: v.$negro;
+        color: v.$blanco;
+    }
+
+}

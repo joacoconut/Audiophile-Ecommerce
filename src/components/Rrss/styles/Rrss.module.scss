@@ -1,0 +1,10 @@
+.rrssContainer {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    @media (max-width: 850px) { 
+        display: none;
+    }
+
+}

@@ -1,0 +1,15 @@
+.vatContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0 5px 0;
+
+    .vatText {
+      text-transform: uppercase;
+    }
+
+    .vatPrice {
+      font-weight: 700;
+      font-size: 18px;
+    }
+  }

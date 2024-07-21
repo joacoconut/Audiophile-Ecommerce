@@ -1,0 +1,29 @@
+.copyrightContainer {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 850px) { 
+        margin-top: 80px;
+    }
+
+    @media (max-width: 580px) { 
+        flex-direction: column;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .rrssContainer {
+        display: none;
+    
+        @media (max-width: 850px) { 
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        }
+
+        @media (max-width: 580px) { 
+            justify-content: center;
+            margin-top: 50px;
+        }
+    }
+}

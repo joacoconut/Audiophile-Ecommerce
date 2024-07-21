@@ -1,0 +1,27 @@
+@use '../../../sass/general/mixins' as m;
+@use '../../../sass/general/variables' as v;
+
+// ------ MOBILE FIRST ------ //
+    .hero {
+        background-image: url(../../../../public/img/hero-phone.jpg);
+        min-height: 100vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }    
+
+
+    // ------ TABLET ------ //
+@media (min-width: 580px) {
+    .hero {
+        background-image: url('../../../../public/img/hero-tablet.jpg');
+    }
+}
+
+    // ------ DESKTOP ------ //
+@media (min-width: 1000px) {
+    .hero {
+        background-image: url('../../../../public/img/image-hero.jpg');
+    }
+}
+

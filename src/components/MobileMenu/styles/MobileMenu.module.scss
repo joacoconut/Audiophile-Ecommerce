@@ -1,0 +1,62 @@
+@use '../../../sass/general/variables' as v;
+
+.logo {
+  display: none;
+
+  @media (min-width: 580px) {
+    display: block;
+  }
+}
+
+.menu {
+  width: 30px;
+
+  // --- DESKTOP --- //
+  @media (min-width: 851px) {
+    display: none;
+  }
+}
+
+.mobileMenu {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+
+.myClass {
+  :global(.ant-drawer-header) {
+    background-color: v.$negro;
+    padding-top: 20px;
+
+    :global(.ant-drawer-close) {
+      font-size: 15px;
+      background-color: v.$primario;
+      color: v.$blanco;
+
+      &:hover {
+        background-color: v.$secundario;
+      }
+    }
+  }
+
+  :global(.ant-drawer-body) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding-top: 70px;
+    background-color: v.$negro;
+
+    a {
+      color: v.$blanco; 
+      text-transform: uppercase;
+      font-weight: 400;
+
+      &:hover {
+        color: v.$primario;
+        transition: 0s;
+      }
+    }
+  }
+}

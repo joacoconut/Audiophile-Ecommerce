@@ -1,0 +1,11 @@
+@use '../../sass/general/variables' as v;
+@use '../../sass/general/mixins' as m;
+
+.componentContainer {
+    display: flex;
+    gap: 10px;
+
+    .button {
+        @include m.boton(v.$primario, v.$blanco)
+    }
+}

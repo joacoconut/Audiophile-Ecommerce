@@ -1,0 +1,12 @@
+@use '../../../sass/general/variables' as v;
+
+.button {
+    all: unset;
+    cursor: pointer;
+    color: v.$gris;
+    margin-top: 20px;
+
+    &:hover {
+        color: v.$primario;
+    }
+}

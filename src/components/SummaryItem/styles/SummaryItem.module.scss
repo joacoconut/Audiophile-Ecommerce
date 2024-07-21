@@ -1,0 +1,63 @@
+@use '../../../sass/general/variables' as v;
+
+.itemContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-bottom: 30px;
+
+    .itemContent {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      
+
+        .itemInfo {
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+        }
+
+        .itemImage {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+        }
+
+        .itemName {
+            color: v.$negro;
+            margin-bottom: 10px;
+            max-width: 80%;
+           
+        }
+
+        .itemPrice {
+            font-weight: 600;
+            color: v.$gris;
+            font-size: 16px;
+        }
+    }
+
+    .buttonsContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .removeItem {
+            all: unset;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 13px;
+            letter-spacing: 1px;
+            background-color: crimson;
+            color: v.$blanco;
+            padding: 10px 15px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: lighten(crimson, 15%);
+                transition: .2s;
+            }
+        }
+    }
+}

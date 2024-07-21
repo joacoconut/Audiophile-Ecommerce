@@ -1,0 +1,76 @@
+@use "../../../../sass/general/variables" as v;
+
+.cart {
+  display: flex;
+  position: relative;
+  cursor: pointer;
+
+  .cartCount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    left: -10.5px;
+    text-align: center;
+    width: 75%;
+    background-color: v.$primario;
+    border-radius: 50%;
+    padding: 2px 1px 2px 1px;
+    color: v.$blanco;
+    font-size: 11px;
+  }
+}
+
+
+.myClass{
+  .cartHeader {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+    .cartCount {
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 18px;
+      letter-spacing: 1px;
+    }
+
+    .removeAllButton {
+      all: unset;
+      color: #3486f9;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 15px;
+      text-align: end;
+      margin-bottom: 30px;
+      cursor: pointer;
+
+      &:hover {
+        color: #0d60d5;
+      }
+    }
+  }
+
+  :global(.ant-drawer-close) {
+    font-size: 15px;
+    margin-right: 20px;
+  }
+
+  .checkoutButton {
+    display: flex;
+    justify-content: center;
+    background-color: v.$primario;
+    color: v.$blanco;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 12px 0;
+    margin-top: 20px;
+
+    &:hover {
+      background-color: v.$secundario;
+      transition: .2s;
+    }
+  }
+
+}

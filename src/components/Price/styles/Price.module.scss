@@ -1,0 +1,9 @@
+@use '../../../sass/general/variables' as v;
+
+.price {
+    color: v.$negro;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 30px;
+    font-size: 30px;
+}

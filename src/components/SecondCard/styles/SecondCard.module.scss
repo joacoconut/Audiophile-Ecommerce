@@ -1,0 +1,61 @@
+@use '../../../sass/general/variables' as v;
+@use '../../../sass/general/mixins' as m;
+
+.cardContainer {
+    background-image: url('../../../../public/img/image-speaker-zx7.jpg');
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 5px;
+
+    .cardContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        height: 250px;
+        margin-left: 70px;
+    }
+
+    .cardButton {
+        
+        a {
+            @include m.boton(#ffffff00, v.$negro);
+            border: 1px solid v.$negro;
+        }
+    }
+
+    .cardButton a:hover {
+        background-color: v.$negro;
+        color: v.$blanco;
+    }
+    
+
+    // ------ TABLET ------ //
+    @media (max-width: 1200px) {
+        background-image: url('../../../../public/img/tablet-image-speaker-zx7.jpg');
+    }
+
+
+
+// ------ MOBILE ------ //
+    @media (max-width: 767px) {
+        background-image: url('../../../../public/img/mobile-image-speaker-zx7.jpg');
+        border-radius: 10px;
+
+        .cardContent {
+            margin-left: 0;
+
+            .cardHeading {
+                font-size: 2.5rem;
+                margin-left: 20px;
+            }
+
+            .cardButton {
+                margin-left: 20px;
+            }
+        }
+    }
+}
+

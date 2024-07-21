@@ -1,0 +1,64 @@
+@use '../../../sass/general/variables' as v;
+
+.featuresContainer {
+    display: flex;
+    gap: 140px;
+    margin-top: 150px;
+
+    .featuresHeading {
+        font-size: 3rem;
+        margin-bottom: 30px;
+    }
+
+    .featuresDescription {
+        max-width: 95%;
+    }
+
+    .featuresBox {
+        width: 100%;
+    }
+
+    .boxList {
+        margin-bottom: 20px;
+    }
+
+    .boxStock {
+        color: v.$primario;
+        font-weight: 600;
+        margin-right: 20px;
+    }
+
+  
+
+    // ------- TABLET ------ //
+    @media (max-width: 985px) { 
+        flex-direction: column;
+
+        .featuresDescription {
+            max-width: 100%;
+        }
+
+        .featuresBox {
+           display: flex;
+           justify-content: space-between;
+        }
+    }
+
+    // ------ MOBILE ------
+    @media (max-width: 580px) { 
+        flex-direction: column;
+        gap: 80px;
+        margin-top: 80px;
+
+        .featuresDescription {
+            max-width: 100%;
+        }
+
+        .featuresBox {
+            flex-direction: column;
+        }
+
+    }
+
+}
+

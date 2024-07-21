@@ -1,0 +1,31 @@
+@use '../../../../sass/general/variables' as v;
+
+.headerNav {
+    display: flex;
+    align-items: center;
+
+    .headerUl {
+        display: flex;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .navLink {
+        display: flex;
+        text-transform: uppercase;
+        font-size: 14px;
+        color: v.$blanco;
+        font-weight: 500;
+    }
+
+    .navLink:hover {
+        color: v.$primario;
+    }
+    
+  @media (max-width: 850px) { 
+    display: none;
+  }
+
+}
+
+

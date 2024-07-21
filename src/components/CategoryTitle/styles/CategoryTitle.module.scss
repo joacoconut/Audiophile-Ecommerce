@@ -1,0 +1,13 @@
+@use '../../../sass/general/variables' as v;
+
+.positionCenter {
+/*     width: 100%;
+    display: flex;
+    justify-content: center; */
+
+    .heading {
+        color: v.$blanco;
+        font-size: 4.5rem;
+        margin: 0 auto;
+    }
+}

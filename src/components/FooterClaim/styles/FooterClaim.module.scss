@@ -1,0 +1,12 @@
+.footerContent {
+   margin: 40px 0 50px 0;
+   max-width: 55%;
+   
+   @media (max-width: 850px) { 
+      max-width: 100%;
+   }
+
+   @media (max-width: 580px) { 
+      text-align: center;
+   }
+}

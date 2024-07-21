@@ -1,0 +1,64 @@
+@use '../../../sass/general/variables' as v;
+
+.storeInfoCard {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    margin-bottom: 200px;
+
+    .storeInfoText {
+        width: 80%;
+        padding-right: 50px;
+    }
+
+    .storeInfoImage {
+        background: url('../../../../public/img/image-best-gear.jpg');
+        background-size: cover;
+        background-position: center;
+        border-radius: 5px;
+        width: 100%;
+        height: 550px;
+    }
+
+    span {
+        color: v.$primario;
+    }
+
+
+    // ------ TABLET ------ //
+    @media (max-width: 1200px) {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: -30px;
+        margin-bottom: 100px;
+
+        .storeInfoImage {
+            background: url('../../../../public/img/tablet-image-best-gear.jpg');
+            background-position: center;
+            border-radius: 10px;
+            margin-bottom: 50px;
+        }
+
+        .storeInfoHeading {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .storeInfoText {
+            text-align: center;
+            padding-right: 0;
+        }
+    }
+
+
+   @media (max-width: 768px) {
+        .storeInfoImage {
+            background: url('../../../../public/img/mobile-image-best-gear.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 350px;
+        }
+    }
+
+}

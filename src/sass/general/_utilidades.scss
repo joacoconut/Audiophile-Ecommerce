@@ -1,0 +1,183 @@
+@use 'variables' as v; 
+@use 'mixins' as m; 
+
+.checkoutBody {
+    background-color: v.$gris_secundario;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.df-center {
+    display: flex;
+    justify-content: center;
+}
+
+.df-a-center {
+    display: flex;
+    align-items: center;
+}
+
+.gap-20 {
+    display: flex;
+    gap: 20px;
+}
+
+.gap-40 {
+    display: flex;
+    gap: 40px;
+}
+
+.df-column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.s-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper {
+    width: 80%;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.responsiveHeader {
+    @media (min-width: 580px) { 
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+}
+
+.responsiveFooterNav {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 850px) { 
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    @media (max-width: 580px) { 
+        align-items: center;
+    }
+}
+
+.responsiveGrid {
+    @media (min-width: 768px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+    
+} 
+
+
+.responsiveCategories {
+   display: flex;
+   gap: 40px;
+
+     @media (max-width: 768px) { 
+        flex-direction: column;
+    }
+} 
+
+
+.m-bottom-0 {
+    margin-bottom: 0px;
+}
+
+.m-bottom-50 {
+    margin-bottom: 50px;
+}
+
+.m-top-0 {
+    margin-top: 0;
+}
+
+.mtop-negative-100 {
+    margin-top: -100px;
+}
+
+.m-top {
+    margin-top: 50px;
+}
+
+.m-top-100 {
+    margin-top: 100px;
+}
+
+.m-top-150 {
+    margin-top: 150px;
+}
+
+.m-top-200 {
+    margin-top: 200px;
+}
+
+.m-top-250 {
+    margin-top: 250px;
+}
+
+.m-bottom-350 {
+    margin-bottom: 350px;
+}
+
+.m-top-0 {
+    margin-top: 0px;
+}
+
+.m-bottom {
+    margin-bottom: 170px;
+}
+
+.m-bottomV2 {
+    margin-bottom: 250px;
+}
+
+.center {
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-size {
+    font-size: 3rem;
+}
+
+.o-hidden {
+    overflow: hidden;
+}
+
+.wrapperResponsive {
+    @media (max-width: 1268px) {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.headerResponsive {
+    @media (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
+}
+
+
+
+

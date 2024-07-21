@@ -1,0 +1,28 @@
+.categories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+} 
+
+// ------ TABLET ------ //
+@media (min-width: 768px) {
+    .categories {
+        gap: 40px;
+        margin: 30px 0 20px 0;
+    }
+}
+
+@media (min-width: 1180px) { 
+    .categories {
+        flex-direction: row;
+    }
+}
+
+/* .categories {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 50px 0 10px 0;
+} */

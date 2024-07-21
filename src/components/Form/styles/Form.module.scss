@@ -1,0 +1,227 @@
+@use "../../../sass/general/variables" as v;
+
+.form {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  margin-top: 50px;
+
+  .checkoutContainer {
+    background-color: v.$blanco;
+    padding: 50px 50px 0 50px;
+    margin-bottom: 100px;
+    border-radius: 10px;
+  }
+
+  .formHeading {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+
+  .itemsContainer {
+    margin-bottom: 10px;
+  }
+
+  .formSection {
+    margin-bottom: 50px;
+
+    .formSectionHeading {
+      color: v.$primario;
+      margin: 30px 0 30px 0;
+      letter-spacing: 1px;
+    }
+
+    .formInputPack {
+      display: flex;
+      gap: 20px;
+    }
+
+    .inputContainer {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    .a {
+      width: 100%;
+    }
+
+    .optionContainer {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .labelOption {
+      display: inline-block;
+      width: 380px;
+      padding: 15px 15px 15px 10px;
+      cursor: pointer;
+    }
+
+
+    .buttonOption {
+      display: flex;
+      border: 1px solid #aaa8a8;
+      border-radius: 10px;
+      font-weight: 600;
+      max-width: 300px;
+      cursor: pointer;
+      padding-left: 15px;
+    }
+
+    .labelAlert {
+      color: v.$alert;
+      font-weight: 600;
+      margin-bottom: 10px;
+      width: fit-content;
+    }
+
+    .formInputLabel {
+      font-weight: 600;
+      margin-bottom: 10px;
+      width: fit-content;
+    }
+
+    .formInput {
+      all: unset;
+      border: 1px solid #aaa8a8;
+      border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      max-width: 300px;
+      color: v.$gris;
+    }
+
+    .inputAlert {
+      all: unset;
+      color: v.$alert;
+      border: 1px solid v.$alert;
+      border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      max-width: 300px;
+    }
+
+    .radioButton {
+      border: 1px solid #aaa8a8;
+      border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      max-width: 300px;
+    }
+
+    .optionContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+
+  .alert {
+    color: v.$alert;
+  }
+
+  @media (max-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+
+    .checkoutContainer {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (max-width: 1000px) { 
+    .formSection {
+
+      .formInput {
+        width: 100%;
+      }
+
+      .ff {
+        width: 100%;
+      }
+    }
+
+    .formInputPack {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 850px) {
+    .formInputPack {
+      flex-direction: column;
+    }
+
+    .formSectionHeading {
+      margin: 0;
+    }
+  }
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  background-color: v.$blanco;
+  padding: 30px;
+  border-radius: 10px;
+  height: fit-content;
+
+  .summaryHeading {
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+
+  .buttonCheckout {
+    all: unset;
+    color: v.$blanco;
+    background-color: v.$primario;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 30px;
+
+    &:hover {
+      background-color: v.$secundario;
+    }
+
+    &:disabled {
+      background-color: v.$gris_secundario;
+      cursor: not-allowed;
+    }
+  }
+}
+
+
+.myClass{
+  :global(.ant-btn) {
+    display: none;
+  }
+
+  :global(.ant-modal-close) {
+    display: none;
+  }
+
+  :global(.ant-radio-inner) {
+    border-color: v.$primario;
+    background-color: v.$primario;
+  }
+}
+
+.radioClass {
+  font-family: "Manrope", sans-serif;
+  font-size: 17px;
+  color: v.$negro;
+  font-weight: 600;
+}
