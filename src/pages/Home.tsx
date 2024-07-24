@@ -83,6 +83,7 @@ export const Home = () => {
         <BigCard
           name={items[5].name}
           claim={items[5].claim}
+          img={items[5].cardImage}
           button={
             <Button
               path={Rutas.PRODUCT_ID.replace(":id", `${items[5].id}`)}

@@ -8,10 +8,11 @@ import { useEffect } from "react";
 interface Props {
   name: string;
   claim: string | undefined;
+  img: string | undefined;
   button: ReactElement | ReactElement[];
 }
 
-export const BigCard = ({ name, claim, button }: Props) => {
+export const BigCard = ({ name, claim, button, img }: Props) => {
     
   useEffect(() => {
     AOS.init({
@@ -27,7 +28,7 @@ export const BigCard = ({ name, claim, button }: Props) => {
           <div>
             <img
               className={styles.cardImage}
-              src="../../public/img/image-speaker-zx9.png"
+              src={img}
               alt="Speaker"
             />
 

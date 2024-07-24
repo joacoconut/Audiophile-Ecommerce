@@ -5,6 +5,7 @@ import xx99MarkTwoHeadphones from "../../public/img/image-category-xx99-marktwo-
 import yx1Earphones from "../../public/img/image-category-page-preview-yx1.jpg";
 import zx7Speaker from "../../public/img/image-category-zx7-speaker.jpg";
 import zx9Speaker from "../../public/img/image-category-zx9-speaker.jpg";
+import zx9SpeakerCard from "../../public/img/image-speaker-zx9.png";
 
 // ------------ THUMBNAIL ------------ //
 import zx9SpeakerThumbnail from "../../public/img/image-category-thumbnail-speakers.png";
@@ -200,6 +201,7 @@ const bbdd = {
       category: "Speakers",
       name: "ZX9 Speaker",
       src: zx9Speaker,
+      cardImage: zx9SpeakerCard,
       claim:
         "Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.",
       description:
@@ -231,9 +233,6 @@ const bbdd = {
     { id: uuidv4(), src: zx9SpeakerThumbnail },
     { id: uuidv4(), src: yx1EarphonesThumbnail },
   ],
-
-
-  total: 0
 };
 
 
