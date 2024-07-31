@@ -21,7 +21,27 @@
             "dest": "/"
         },
         {
-            "src": "/product/:id",
+            "src": "/product/1",
+            "dest": "/"
+        },
+        {
+            "src": "/product/2",
+            "dest": "/"
+        },
+        {
+            "src": "/product/3",
+            "dest": "/"
+        },
+        {
+            "src": "/product/4",
+            "dest": "/"
+        },
+        {
+            "src": "/product/5",
+            "dest": "/"
+        },
+        {
+            "src": "/product/6",
             "dest": "/"
         }
     ]
