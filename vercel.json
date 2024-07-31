@@ -1,0 +1,28 @@
+{
+    "routes": [
+        {
+            "src": "/",
+            "dest": "/"
+        },
+        {
+            "src": "/headphones",
+            "dest": "/"
+        },
+        {
+            "src": "/speakers",
+            "dest": "/"
+        },
+        {
+            "src": "/earphones",
+            "dest": "/"
+        },
+        {
+            "src": "/checkout",
+            "dest": "/"
+        },
+        {
+            "src": "/product/:id",
+            "dest": "/"
+        }
+    ]
+}
